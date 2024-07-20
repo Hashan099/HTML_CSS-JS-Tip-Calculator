@@ -19,7 +19,7 @@ function calculatebill() {
       if(isNaN(totalamount)) {
         total.value = 0;
       } else {
-        const perPersonTotal = totalamount / Number(tipamount);
+        const perPersonTotal = (totalamount * Number(tipamount))/100;
         showtotal.innerHTML = ` Rs : ${Number(total.value).toFixed(2)}`;
         showtipamount.innerHTML = ` Rs : ${perPersonTotal.toFixed(2)}`;
 
