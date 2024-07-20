@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="topContainer">
+        <div class="title">Bill total</div>
+        <div class="inputContainer">
+          <span>Rs</span>
+          <input type="number" id="billTotalInput" placeholder="0.00"  autocomplete="off" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">Tip</div>
+        <div class="inputContainer">
+          <span>%</span>
+          <input type="number" id="tipInput" autocomplete="off" />
+        </div>
+      </div>
+
+      <div class="container" id="bottom">
+        <div class="totalContainer">
+          <div class="title">
+            Bill Amount = <span id="BillTotal"> Rs : 0.00</span>
+          </div>
+          <div class="title">
+            Tip Amount = <span id="perPersonTotal"> Rs : 0.00</span>
+          </div>
+          <div class="title">
+            Total Bill =  <span id="payabletotal"> Rs : 0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
